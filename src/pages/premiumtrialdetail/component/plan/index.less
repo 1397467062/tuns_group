@@ -1,0 +1,72 @@
+@import "../../../../components/styles/theme.less";
+
+.root {
+  margin-top: 10px;
+  :global {
+    .am-list-item {
+      padding-left: 0;
+    }
+    .am-list-item .am-list-line {
+      padding-right: 0;
+      .am-list-content {
+        font-size: 30px;
+        color: @color-title;
+      }
+      .am-list-extra {
+        color: @color-text;
+        font-size: 30px;
+        flex: none;
+      }
+    }
+    .am-card-body {
+      margin: 30px;
+      box-shadow: 0 0 0.1rem 0 rgba(176, 176, 176, 0.5);
+      border-radius: 0.1rem;
+      border-top: none;
+      padding: 12px 30px 12px 30px;
+    }
+    .am-card {
+      padding: 0;
+    }
+    .am-card-header {
+      height: 52px;
+      border-bottom: 1px solid #ddd;
+    }
+    .am-card-header-content {
+      font-size: 34px;
+      font-family: PingFangSC-Medium;
+    }
+    .am-accordion {
+      border-top: none;
+    }
+    .am-accordion .am-accordion-item .am-accordion-header {
+      padding-left: 0;
+      padding-right: 30px;
+    }
+    .am-accordion .am-accordion-item .am-accordion-header i {
+      right: 0;
+    }
+    .tuns-form-accordion-wrap .tuns-form-accordion-head {
+      font-size: 30px;
+      color: @color-title;
+    }
+  }
+  .sub_title {
+    font-family: PingFangSC-Medium;
+    font-size: 30px;
+    color: @color-title;
+    line-height: 88px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    &::after {
+      content: " ";
+      position: absolute;
+      width: 0.06rem;
+      height: 0.3rem;
+      background-color: @color-primary;
+      top: 50%;
+      left: -30px;
+      transform: translateY(-50%);
+    }
+  }
+}

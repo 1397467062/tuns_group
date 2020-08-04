@@ -1,0 +1,61 @@
+@import "~components/styles/theme.less";
+
+.root {
+  // height: 1500px;
+  // padding-bottom: 30px;
+  :global {
+    .am-list-item .am-input-control input {
+      text-align: left;
+      font-size: 30px;
+      color: #666666;
+    }
+    // 调整表单标题字体
+    .am-list-item .am-input-label.am-input-label-5 {
+      font-size: 32px;
+      color: #333333;
+      min-width: 200px;
+    }
+    .am-list-item .am-list-line .am-list-content {
+      flex: none;
+      font-size: 30px;
+      color: #333333;
+      min-width: 200px;
+      margin-right: 10px;
+    }
+    .am-list-item .am-list-line .am-list-extra {
+      flex: 1;
+      text-align: left;
+      font-size: 30px;
+      color: #666666;
+    }
+    .am-checkbox-agree .am-checkbox-inner {
+      left: 0;
+      top: 0.18rem;
+    }
+  }
+  .groupTitle {
+    display: flex;
+    align-items: center;
+    .text {
+      margin-right: 20px;
+    }
+    .more {
+      font-size: 28px;
+      color: @color-sub;
+      font-weight: normal;
+      font-family: sans-serif;
+    }
+  }
+  .group {
+    margin-top: 10px;
+    :global {
+      .am-list-extra {
+        flex: 1;
+        font-size: 30px;
+      }
+    }
+  }
+  .invoice {
+    width: 100px;
+  }
+}

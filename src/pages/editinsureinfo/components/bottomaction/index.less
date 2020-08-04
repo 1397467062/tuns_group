@@ -1,0 +1,41 @@
+.root {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  .left {
+    .icon {
+      color: #999999;
+    }
+    .text {
+      color: #999999;
+      font-size: 28px;
+    }
+  }
+
+  .action {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    .savetext {
+      color: #999999;
+      font-size: 26px;
+      margin-top: 10px;
+    }
+    .btn {
+      height: 80px;
+      min-width: 190px;
+      font-size: 32px;
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  :global {
+    .tuns-button-wrap .am-button {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

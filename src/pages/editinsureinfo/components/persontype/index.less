@@ -1,0 +1,26 @@
+@import "~components/styles/theme.less";
+
+.root {
+  margin: 30px 30px 0 30px;
+  .create {
+    margin: 20px 0;
+    :global {
+      .tuns-button-wrap {
+        height: 88px;
+      }
+      .tuns-button-wrap .am-button {
+        box-shadow: 0 0 10px 0 rgba(176, 176, 176, 0.5);
+        border-radius: 10px;
+        font-size: 32px;
+      }
+      .tuns-button-wrap .tuns-button-active {
+        border-width: 0;
+      }
+    }
+    .icon {
+      height: 34px;
+      margin-right: 10px;
+      color: @color-primary;
+    }
+  }
+}

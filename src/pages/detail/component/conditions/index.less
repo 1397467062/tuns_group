@@ -1,0 +1,123 @@
+@import "../../../../components/styles/theme.less";
+
+.root {
+  .title {
+    margin-top: 10px;
+    padding: 30px;
+    height: 106px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-bottom: 1px solid @color-border;
+    font-family: PingFangSC-Medium;
+    font-size: 34px;
+    color: @color-title;
+    text-align: left;
+    font-weight: 700;
+  }
+  .condeBox {
+    :global {
+      .am-list-item .am-list-line .am-input-control > input {
+        width: 100%;
+      }
+      .am-list-item .am-input-control {
+        flex: 1;
+        text-align: right;
+      }
+      .am-list-item .am-input-label {
+        min-width: auto;
+      }
+    }
+  }
+  .liabBox {
+    :global {
+      .am-accordion .am-accordion-item .am-accordion-header {
+        border-bottom: none;
+      }
+      .tuns-form-wrap .am-list-body .am-list-item {
+        border-bottom: none;
+      }
+    }
+  }
+  .appoint {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 0 30px;
+    background-color: #fff;
+    font-family: PingFangSC-Regular;
+    font-size: 32px;
+    color: @color-title;
+  }
+
+  :global {
+    .am-list-item {
+      .am-list-line {
+        justify-content: space-between;
+        .am-list-content,
+        .am-list-extra,
+        .am-list-extra > span,
+        .am-input-label,
+        .am-input-control > input {
+          font-size: 30px;
+          color: @color-title;
+        }
+        .am-input-control > input {
+          width: 150px;
+          text-align: end;
+        }
+        .am-list-extra {
+          font-size: 30px;
+          overflow: unset;
+        }
+        .tuns-button-wrap .am-button {
+          padding: 0 10px;
+        }
+        .tuns-form-drawer-right-text {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          max-width: 255px;
+        }
+      }
+      .am-input-label {
+        min-width: 400px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 30px;
+      }
+      .am-input-control {
+        flex: none;
+      }
+    }
+    .tuns-form-accordion-wrap .tuns-form-accordion-head {
+      font-size: 32px;
+      color: #333333;
+      span {
+        width: 250px;
+        text-align: end;
+        &:nth-of-type(1) {
+          text-align: start;
+          min-width: 400px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    .am-accordion
+      .am-accordion-item
+      .am-accordion-content
+      .am-accordion-content-box {
+      font-size: 28px;
+      word-break: break-all;
+      color: @color-sub;
+    }
+    .tuns-team-form-picker-wrap {
+      .am-list-item .am-list-item-middle {
+        border: none;
+      }
+    }
+  }
+}

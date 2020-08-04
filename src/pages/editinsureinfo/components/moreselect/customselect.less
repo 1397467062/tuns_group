@@ -1,0 +1,53 @@
+@import "~components/styles/theme.less";
+
+.root {
+  // padding: 30px 30px 0 30px;
+  // padding-bottom: 30px;
+  .title {
+    display: flex;
+
+    .text {
+      color: @color-text;
+      font-size: 32px;
+      font-weight: normal;
+      margin-right: 10px;
+    }
+    .action {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease;
+      transform: rotate(270deg);
+    }
+    .open {
+      transform: rotate(90deg);
+    }
+  }
+  .more {
+    padding-top: 30px;
+    font-size: 26px;
+    text-align: left;
+  }
+  .selects {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: -40px;
+    :global {
+      .amount_disabled.tuns-button-wrap .am-button {
+        background-color: #cbcccb;
+        color: #fff;
+        opacity: 1;
+      }
+      .tuns-button-wrap {
+        min-width: 18%;
+        margin-bottom: 30px;
+        margin-left: 40px;
+        .am-button {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}

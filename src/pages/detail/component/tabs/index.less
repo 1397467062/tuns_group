@@ -1,0 +1,66 @@
+@import "../../../../components/styles/theme.less";
+
+.root {
+  .product {
+    padding: 30px;
+    padding-bottom: 150px;
+    background-color: #fff;
+    img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .notice {
+    .header {
+      padding: 30px;
+      padding-top: 40px;
+      font-size: 34px;
+      color: @color-title;
+    }
+    .content {
+      font-size: 28px;
+      color: @color-text;
+      line-height: 33px;
+      white-space: pre-line;
+    }
+    :global {
+      .am-card {
+        padding-bottom: 150px;
+      }
+      .am-card.am-card-full {
+        border-top: none;
+      }
+    }
+  }
+  .terms {
+    :global {
+      .am-list-body {
+        padding-bottom: 150px;
+      }
+      .am-list-header {
+        padding: 30px;
+        font-size: 34px;
+        color: #000;
+        background-color: #fff;
+      }
+      .am-list-content {
+        font-size: 30px;
+        color: @color-title;
+      }
+    }
+  }
+  :global {
+    .am-card-header-content {
+      font-weight: 700;
+    }
+    .am-tabs-default-bar-tab {
+      height: 95px;
+      border-bottom: none;
+    }
+    .am-tabs-default-bar-top .am-tabs-default-bar-tab {
+      border-bottom: none;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import "../../../../components/styles/theme.less";
+
+.root {
+  margin-bottom: 10px;
+  background-color: #fff;
+  font-family: PingFangSC-Regular;
+  font-size: 29px;
+  .header {
+    padding-top: 20px;
+    padding-left: 30px;
+    color: @color-title;
+  }
+  .body {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    border-bottom: 1px solid @color-border;
+    .img {
+      width: 148px;
+      height: 120px;
+      margin-right: 20px;
+    }
+    .content {
+      .title {
+        font-weight: 700;
+        font-size: 33px;
+        color: @color-title;
+        margin-bottom: 11px;
+      }
+      .time {
+        color: @color-sub;
+        margin-bottom: 10px;
+      }
+      .tip {
+        color: @color-primary;
+        line-height: 34px;
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    font-weight: 700;
+    p {
+      font: 26px;
+    }
+    .button {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      flex: 1;
+      font-weight: 400;
+      :global {
+        .am-button {
+          padding: 0 20px;
+          border-width: 2px;
+          height: 60px;
+          font-size: 30px;
+        }
+      }
+      .delete {
+        :global {
+          .am-button {
+            color: @color-sub;
+            border-color: @color-sub;
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import "~components/styles/theme.less";
+
+.root {
+  height: 60vh;
+  padding: 30px 30px 0 30px;
+  .title {
+    border-bottom: 1px solid @color-border;
+    display: flex;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    .text {
+      font-size: 34px;
+      color: @color-title;
+      font-weight: bold;
+    }
+    .more {
+      font-size: 28px;
+      color: @color-sub;
+      line-height: 48px;
+      white-space: nowrap;
+    }
+  }
+  .content {
+    // height: 50vh;
+    // overflow-y: auto;
+  }
+  .action {
+    border-top: 1px solid @color-border;
+    padding: 20px 0;
+    :global {
+      .tuns-button-wrap {
+        height: 88px;
+      }
+    }
+  }
+}

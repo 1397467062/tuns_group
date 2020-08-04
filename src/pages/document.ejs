@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- set `maximum-scale` for some compatibility issues -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <!-- <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script> -->
+    <script>
+      // if ("addEventListener" in document) {
+      //   document.addEventListener(
+      //     "DOMContentLoaded",
+      //     function() {
+      //       FastClick.attach(document.body);
+      //     },
+      //     false
+      //   );
+      // }
+      if (!window.Promise) {
+        document.writeln(
+          '<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' +
+            ">" +
+            "<" +
+            "/" +
+            "script>"
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="//at.alicdn.com/t/font_1437951_mpgljf6hb2.js"></script>
+    <script>
+      var iOS = function iOS() {
+        var userAgent = "" + window.navigator.userAgent.toLowerCase();
+        var ios = /\(i[^;]+;( U;)? CPU.+Mac OS X/i.test(userAgent);
+        return ios;
+      };
+
+      var timeout;
+      var isIOS = iOS();
+
+      if (isIOS) {
+        document.body.addEventListener("focusin", function() {
+          clearTimeout(timeout);
+        });
+        document.body.addEventListener("focusout", function() {
+          clearTimeout(timeout);
+          timeout = setTimeout(function() {
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            });
+          }, 0);
+        });
+      }
+    </script>
+  </body>
+</html>

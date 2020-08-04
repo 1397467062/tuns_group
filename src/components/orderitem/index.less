@@ -1,0 +1,70 @@
+@import "../styles/theme.less";
+@prefix: tuns-group-orderitem;
+:global {
+  .@{prefix}-wrap {
+    font-family: PingFangSC-Regular;
+    font-size: 28px;
+    padding: 30px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    color: @color-title;
+    .@{prefix}-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    .@{prefix}-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+      .@{prefix}-img {
+        width: 160px;
+        height: 150px;
+        margin-right: 20px;
+      }
+      .@{prefix}-item {
+        display: flex;
+        flex-direction: column;
+        .@{prefix}-title {
+          font-size: 32px;
+          margin-bottom: 10px;
+          color: @color-title;
+        }
+        p {
+          color: @color-sub;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .@{prefix}-money {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      color: @color-primary;
+      margin-bottom: 30px;
+    }
+    .@{prefix}-buttonBox {
+      display: flex;
+      justify-content: flex-end;
+      .@{prefix}-button {
+        color: @color-text;
+        border-radius: 27px;
+        margin-right: 20px;
+        &:nth-last-of-type(1) {
+          margin-right: 0px;
+          border: 1px solid @color-primary;
+          color: @color-primary;
+        }
+      }
+      .am-button-small {
+        padding: 0px;
+        width: 135px;
+        height: 54px;
+        line-height: 54px;
+        font-size: 28px;
+      }
+    }
+  }
+}

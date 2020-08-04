@@ -1,0 +1,42 @@
+@import "../../components/styles/theme.less";
+.main{
+  height: 100%;
+    display: flex;
+    flex-direction: column;
+    .content{
+      flex: 1;
+      overflow-y: auto;
+    }
+    .footer {
+      width: 100%;
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+      background-color: #ffff;
+      .commitbtn{
+        background-image: linear-gradient(90deg, #FB7037 6%, #FCB15A 100%);
+        border-radius: 44px;
+        height: 88px;
+        margin:  20px 75px;
+        font-family: PingFangSC-Medium;
+        font-size: 34px;
+        color: #FFFFFF;
+      }
+    }
+    :global{
+      .am-list-body {
+        background-color: rgba(0,0,0,0);
+      }
+    }
+    .button {
+      p {
+        margin: 0;
+        font-size: 28px;
+        color: @color-sub;
+      }
+      :global {
+        .am-icon {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+}

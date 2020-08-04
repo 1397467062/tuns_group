@@ -1,0 +1,63 @@
+@import "../../../../components/styles/default.less";
+
+.root {
+  background-color: #fff;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    .titletext {
+      color: @color-title;
+      flex: 1;
+      margin-left: 66px;
+      font-weight: bolder;
+    }
+    .titleclose {
+      color: @color-title;
+    }
+  }
+
+  .content {
+    height: 700px;
+    overflow: auto;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: left;
+    white-space: pre-line;
+  }
+
+  .action {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px 30px;
+    .button {
+      flex: 1;
+      // width: 330px;
+      height: 88px;
+      font-size: 34px;
+      &.left {
+        float: left;
+      }
+      &.right {
+        float: right;
+        margin-left: 30px;
+        color: #ffffff;
+        :global {
+          .am-button {
+            background-color: #cbcbcb;
+            border-radius: 9999px;
+            background-image: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}
